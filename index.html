@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pwodwi & Sèvis Disponib</title>
+<meta name="description" content="Découvrez nos produits alimentaires et chimiques de qualité. Gâteaux, biskuits, gratin, savon, chanpou, javel et plus. Contactez-nous sur WhatsApp !">
+
+<style>
+/* ================= COULEURS PERSONNALISABLES ================= */
+:root{
+  --main-color:#5E35B1;       /* couleur principale */
+  --secondary-color:#EC407A;  /* accent / secondaire */
+  --light-bg:#F3E5F5;         /* fond clair */
+  --dark:#212121;             /* texte principal */
+  --whatsapp:#25D366;         /* bouton WhatsApp */
+}
+
+/* ================= BASE ================= */
+*{box-sizing:border-box;margin:0;padding:0;}
+body{
+  font-family:'Poppins', Arial, sans-serif;
+  color:var(--dark);
+  background:#fafafa;
+  scroll-behavior:smooth;
+}
+
+/* ================= MENU STICKY ================= */
+nav{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:white;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 40px;
+  box-shadow:0 4px 15px rgba(0,0,0,.1);
+}
+nav strong{
+  font-size:20px;
+}
+nav a{
+  text-decoration:none;
+  color:var(--dark);
+  margin-left:20px;
+  font-weight:600;
+  transition:0.3s;
+}
+nav a:hover{color:var(--main-color)}
+
+/* ================= HERO ================= */
+.hero{
+  background:linear-gradient(135deg,var(--main-color),var(--secondary-color));
+  color:white;
+  padding:120px 20px 90px 20px;
+  text-align:center;
+}
+.hero h1{font-size:42px;margin-bottom:10px;}
+.hero p{font-size:18px;}
+
+/* ================= SECTIONS ================= */
+section{
+  padding:70px 8%;
+}
+section h2{
+  color:var(--main-color);
+  font-size:32px;
+  margin-bottom:25px;
+}
+
+/* ================= CARTES ================= */
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:25px;
+}
+.card{
+  background:white;
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:0 10px 25px rgba(0,0,0,.15);
+  transition:0.3s;
+}
+.card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 15px 35px rgba(0,0,0,.25);
+}
+.card img{
+  width:100%;
+  height:160px;
+  object-fit:cover;
+}
+.card p{
+  padding:12px;
+  text-align:center;
+  font-weight:600;
+}
+
+/* ================= LISTES ================= */
+.list{
+  margin-top:20px;
+  background:var(--light-bg);
+  padding:20px;
+  border-radius:18px;
+  line-height:1.9;
+}
+
+/* ================= BLOC INFO ================= */
+.info{
+  background:linear-gradient(135deg,#fff,var(--light-bg));
+  padding:35px;
+  border-radius:25px;
+  border-left:8px solid var(--main-color);
+}
+
+/* ================= CONTACT ================= */
+.contact{
+  background:linear-gradient(135deg,var(--main-color),var(--secondary-color));
+  color:white;
+  text-align:center;
+  padding:50px 20px;
+}
+.contact h2{margin-bottom:15px;}
+.contact p{font-size:18px;}
+
+/* ================= WHATSAPP ================= */
+.whatsapp{
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  background:var(--whatsapp);
+  color:white;
+  padding:16px 24px;
+  border-radius:50px;
+  text-decoration:none;
+  font-weight:700;
+  box-shadow:0 8px 25px rgba(0,0,0,.4);
+  animation:pulse 2s infinite;
+}
+@keyframes pulse{
+  0%{transform:scale(1);}
+  50%{transform:scale(1.1);}
+  100%{transform:scale(1);}
+}
+
+/* ================= FOOTER ================= */
+footer{
+  background:#eee;
+  text-align:center;
+  padding:15px;
+  font-size:14px;
+  color:#555;
+}
+</style>
+</head>
+
+<body>
+
+<!-- MENU -->
+<nav>
+  <strong>PWODWI & SÈVIS</strong>
+  <div>
+    <a href="#produits">Produits</a>
+    <a href="#chimique">Chimik</a>
+    <a href="#promos">Promos</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>🧁🧼 PWODWI & SÈVIS DISPONIB</h1>
+  <p>Kalite • Disponibilite • Konfyans</p>
+</div>
+
+<!-- PRODUITS ALIMENTAIRES -->
+<section id="produits">
+  <h2>🍰 Pwodwi Alimantè</h2>
+  <div class="cards">
+    <div class="card"><img src="gateau.jpg" alt="Gato"><p>Gato</p></div>
+    <div class="card"><img src="boulette.jpg" alt="Boulet vyann"><p>Boulet vyann</p></div>
+    <div class="card"><img src="biscuit.jpg" alt="Biskwit fondan"><p>Biskwit fondan</p></div>
+    <div class="card"><img src="macaroni.jpg" alt="Graten makawoni"><p>Graten makawoni</p></div>
+  </div>
+  <div class="list">
+    Pâté • Vinèg • Ti koubèl bonbon • Pen patat • Ti moso sale & dous • Kornè • Resèt friti ak lwil • Resèt friti ak dlo
+  </div>
+</section>
+
+<!-- PRODUITS CHIMIQUES -->
+<section id="chimique">
+  <h2>🧴 Pwodwi Chimik</h2>
+  <div class="info">
+    Pomad cheve • Parfen • Lwil parfen • Savon twalèt • Javel • Kloròs • Chanpou • Mistolin • Krèm pou po  
+    <br><strong>Lòt pwodwi disponib sou demann</strong>
+  </div>
+</section>
+
+<!-- PROMOTIONS / MINI-PAGES SIMULÉES -->
+<section id="promos">
+  <h2>🎁 Promotions & Nouveautés</h2>
+  <div class="cards">
+    <div class="card"><img src="promo1.jpg" alt="Promo 1"><p>Promo Gato</p></div>
+    <div class="card"><img src="promo2.jpg" alt="Promo 2"><p>Promo Savon</p></div>
+    <div class="card"><img src="promo3.jpg" alt="Promo 3"><p>Promo Biskwit</p></div>
+  </div>
+  <p style="margin-top:20px;text-align:center;font-weight:600;color:var(--dark);">Cliquez sur un produit pour plus de détails</p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <h2>📞 Kontakte Nou</h2>
+  <p><strong>4194-2779 | 3148-3713</strong></p>
+  <p>Disponib tout tan pou bezwen ou</p>
+</section>
+
+<!-- WHATSAPP -->
+<a class="whatsapp" href="https://wa.me/50941942779" target="_blank">
+  💬 WhatsApp
+</a>
+
+<!-- FOOTER -->
+<footer>
+  © 2026 Pwodwi & Sèvis Disponib — Site gratuit, professionnel et responsive
+</footer>
+
+</body>
+</html>
