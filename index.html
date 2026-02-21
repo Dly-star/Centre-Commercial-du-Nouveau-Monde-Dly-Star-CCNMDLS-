@@ -1,329 +1,251 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pwodwi & Sèvis Disponib</title>
-<meta name="description" content="Découvrez nos produits alimentaires et chimiques de qualité. Gâteaux, biskuits, gratin, savon, chanpou, javel et plus. Contactez-nous sur WhatsApp !">
-
-<style>
-/* ================= COULEURS PERSONNALISABLES ================= */
-:root{
-  --main-color:#5E35B1;       /* couleur principale */
-  --secondary-color:#EC407A;  /* accent / secondaire */
-  --light-bg:#F3E5F5;         /* fond clair */
-  --dark:#212121;             /* texte principal */
-  --whatsapp:#25D366;         /* bouton WhatsApp */
-}
-
-/* ================= BASE ================= */
-*{box-sizing:border-box;margin:0;padding:0;}
-body{
-  font-family:'Poppins', Arial, sans-serif;
-  color:var(--dark);
-  background:#fafafa;
-  scroll-behavior:smooth;
-}
-
-/* ================= MENU STICKY ================= */
-nav{
-  position:sticky;
-  top:0;
-  z-index:1000;
-  background:white;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:15px 40px;
-  box-shadow:0 4px 15px rgba(0,0,0,.1);
-}
-nav strong{
-  font-size:20px;
-}
-nav a{
-  text-decoration:none;
-  color:var(--dark);
-  margin-left:20px;
-  font-weight:600;
-  transition:0.3s;
-}
-nav a:hover{color:var(--main-color)}
-
-/* ================= HERO ================= */
-.hero{
-  background:linear-gradient(135deg,var(--main-color),var(--secondary-color));
-  color:white;
-  padding:120px 20px 90px 20px;
-  text-align:center;
-}
-.hero h1{font-size:42px;margin-bottom:10px;}
-.hero p{font-size:18px;}
-
-/* ================= SECTIONS ================= */
-section{
-  padding:70px 8%;
-}
-section h2{
-  color:var(--main-color);
-  font-size:32px;
-  margin-bottom:25px;
-}
-
-/* ================= CARTES ================= */
-.cards{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:25px;
-}
-.card{
-  background:white;
-  border-radius:18px;
-  overflow:hidden;
-  box-shadow:0 10px 25px rgba(0,0,0,.15);
-  transition:0.3s;
-}
-.card:hover{
-  transform:translateY(-5px);
-  box-shadow:0 15px 35px rgba(0,0,0,.25);
-}
-.card img{
-  width:100%;
-  height:160px;
-  object-fit:cover;
-}
-.card p{
-  padding:12px;
-  text-align:center;
-  font-weight:600;
-}
-
-/* ================= LISTES ================= */
-.list{
-  margin-top:20px;
-  background:var(--light-bg);
-  padding:20px;
-  border-radius:18px;
-  line-height:1.9;
-}
-
-/* ================= BLOC INFO ================= */
-.info{
-  background:linear-gradient(135deg,#fff,var(--light-bg));
-  padding:35px;
-  border-radius:25px;
-  border-left:8px solid var(--main-color);
-}
-
-/* ================= CONTACT ================= */
-.contact{
-  background:linear-gradient(135deg,var(--main-color),var(--secondary-color));
-  color:white;
-  text-align:center;
-  padding:50px 20px;
-}
-.contact h2{margin-bottom:15px;}
-.contact p{font-size:18px;}
-
-/* ================= WHATSAPP ================= */
-.whatsapp{
-  position:fixed;
-  right:20px;
-  bottom:20px;
-  background:var(--whatsapp);
-  color:white;
-  padding:16px 24px;
-  border-radius:50px;
-  text-decoration:none;
-  font-weight:700;
-  box-shadow:0 8px 25px rgba(0,0,0,.4);
-  animation:pulse 2s infinite;
-}
-@keyframes pulse{
-  0%{transform:scale(1);}
-  50%{transform:scale(1.1);}
-  100%{transform:scale(1);}
-}
-
-/* ================= FOOTER ================= */
-footer{
-  background:#eee;
-  text-align:center;
-  padding:15px;
-  font-size:14px;
-  color:#555;
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pwodwi Alimantè ak Chimik</title>
+  <meta name="description" content="Découvrez nos produits alimentaires et chimiques de qualité. Gâteaux, biscuits, gratin, savon, chanpou, javel et plus. Contactez-nous sur WhatsApp !">
+  <link rel="stylesheet" href="siteCSS.css">
 </head>
 
 <body>
 
-<!-- MENU -->
-<nav>
-  <strong>PWODWI & SÈVIS</strong>
-  <div>
-    <a href="#produits">Produits</a>
-    <a href="#chimique">Chimik</a>
-    <a href="#promos">Promos</a>
-    <a href="#contact">Contact</a>
+  <nav>
+    <div class="logo">🛒 Pwodwi Lakay</div>
+    <ul>
+      <li><a href="#produits-alimentaires">Alimantè</a></li>
+      <li><a href="#produits-chimiques">Chimik & Kosmetik</a></li>
+      <li><a href="#contact">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero">
+    <h1>🧁🧼 PWODWI DISPONIB</h1>
+    <p>Kalite • Disponibilite • Konfyans</p>
   </div>
-</nav>
 
-<!-- HERO -->
-<div class="hero">
-  <h1>🧁🧼 PWODWI & SÈVIS DISPONIB</h1>
-  <p>Kalite • Disponibilite • Konfyans</p>
-</div>
-
-<!-- PRODUITS ALIMENTAIRES -->
-<section id="produits">
-  <h2>🍰 Pwodwi Alimantè</h2>
-  <div class="cards">
-    <div class="card" onclick="openModal(
-'Gâteau',
-'Gâteau fait maison, bon pour événements et commandes spéciales.',
-'gateau.jpg'
-)">
-  <img src="gateau.jpg">
-  <p>Gato</p>
-</div>
-    <div class="card" onclick="openModal(
-'Gâteau',
-'Boulette fait maison, bon pour événements et commandes spéciales.',
-'boulette.jpg'
-)"><img src="boulette.jpg" alt="Boulet vyann"><p>Boulet vyann</p></div>
-    <div class="card" onclick="openModal(
-'Gâteau',
-'Biscuit fait maison, bon pour événements et commandes spéciales.',
-'biscuit.jpg'
-)"><img src="biscuit.jpg" alt="Biskwit fondan"><p>Biskwit fondan</p></div>
-    <div class="card" onclick="openModal(
-'Gâteau',
-'Macaroni fait maison, bon pour événements et commandes spéciales.',
-'macaroni.jpg'
-)"><img src="macaroni.jpg" alt="Graten makawoni"><p>Graten makawoni</p></div>
-  </div>
-  <div class="list">
-    Pâté • Vinèg • Ti koubèl bonbon • Pen patat • Ti moso sale & dous • Kornè • Resèt friti ak lwil • Resèt friti ak dlo
-  </div>
-</section>
-
-<!-- PRODUITS CHIMIQUES -->
-<section id="chimique">
-  <h2>🧴 Pwodwi Chimik</h2>
-  <div class="info">
-    Pomad cheve • Parfen • Lwil parfen • Savon twalèt • Javel • Kloròs • Chanpou • Mistolin • Krèm pou po  
-    <br><strong>Lòt pwodwi disponib sou demann</strong>
-  </div>
-</section>
-
-<!-- PROMOTIONS / MINI-PAGES SIMULÉES -->
-<section id="promos">
-  <h2>🎁 Promotions & Nouveautés</h2>
-  <div class="cards">
-    <div class="card"><img src="promo1.jpg" alt="Promo 1"><p>Promo Gato</p></div>
-    <div class="card"><img src="promo2.jpg" alt="Promo 2"><p>Promo Savon</p></div>
-    <div class="card"><img src="promo3.jpg" alt="Promo 3"><p>Promo Biskwit</p></div>
-  </div>
-  <p style="margin-top:20px;text-align:center;font-weight:600;color:var(--dark);">Cliquez sur un produit pour plus de détails</p>
-</section>
-<!-- SECTION TÉMOIGNAGES CLIENTS -->
-<section id="temoignages" style="padding:50px 20px; background:linear-gradient(135deg,#fdf6f0,#ffe8d6); text-align:center;">
-  <h2 style="font-size:32px; margin-bottom:40px; color:#333;">Ce que disent nos clients</h2>
-
-  <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:30px;">
-
-    <!-- TÉMOIGNAGE 1 -->
-    <div style="background:#fff; padding:20px; border-radius:20px; max-width:300px; box-shadow:0 4px 10px rgba(0,0,0,0.1);">
-      <p>"Gâteau délicieux, service rapide, je recommande à 100%!"</p>
-      <h4 style="margin-top:15px; color:#25D366;">– Marie L.</h4>
-    </div>
-
-    <!-- TÉMOIGNAGE 2 -->
-    <div style="background:#fff; padding:20px; border-radius:20px; max-width:300px; box-shadow:0 4px 10px rgba(0,0,0,0.1);">
-      <p>"Livraison rapide et produits très bien emballés, très satisfaisant."</p>
-      <h4 style="margin-top:15px; color:#25D366;">– Jean P.</h4>
-    </div>
-
-    <!-- TÉMOIGNAGE 3 -->
-    <div style="background:#fff; padding:20px; border-radius:20px; max-width:300px; box-shadow:0 4px 10px rgba(0,0,0,0.1);">
-      <p>"Les biscuits et le gratin étaient parfaits pour ma fête. Merci!"</p>
-      <h4 style="margin-top:15px; color:#25D366;">– Sophie M.</h4>
-    </div>
-
-  </div>
-</section>
-<!-- CONTACT -->
-<section id="contact" class="contact">
-  <h2>📞 Kontakte Nou</h2>
-  <p><strong>4194-2779 | 3148-3713</strong></p>
-  <p>Disponib tout tan pou bezwen ou</p>
-</section>
-
-<!-- WHATSAPP -->
-<a class="whatsapp" href="https://wa.me/50941942779" target="_blank">
-  💬 WhatsApp
-</a>
-
-<!-- FOOTER -->
-<footer>
-  © 2026 Pwodwi & Sèvis Disponib — Site gratuit, professionnel et responsive
-</footer>
-<!-- MODAL PRODUIT -->
-<div id="modal" style="
-display:none;
-position:fixed;
-top:0;left:0;
-width:100%;height:100%;
-background:rgba(0,0,0,0.6);
-z-index:2000;
-justify-content:center;
-align-items:center;">
-  
-  <div style="
-  background:#fff;
-  width:90%;
-  max-width:400px;
-  border-radius:20px;
-  padding:20px;
-  text-align:center;
-  position:relative;">
+  <section id="produits-alimentaires">
+    <h2>🍰 Pwodwi Alimantè</h2>
+    <p class="section-desc">Goute nan bon gou lakay ak pwodwi fre nou yo.</p>
     
-    <span onclick="closeModal()" style="
-    position:absolute;
-    top:10px;right:15px;
-    font-size:22px;
-    cursor:pointer;">✖</span>
+    <div class="cards">
+      <div class="card" onclick="openModal('Gato', 'Gâteau fait maison, idéal pour vos événements et commandes spéciales.', 'gateau.jpg')">
+        <img src="gateau.jpg" alt="Gato">
+        <p>Gato</p>
+      </div>
+      <div class="card" onclick="openModal('Boulet vyann', 'Boulettes de viande savoureuses, bien assaisonnées.', 'boulette.jpg')">
+        <img src="boulette.jpg" alt="Boulet vyann">
+        <p>Boulet vyann</p>
+      </div>
+      <div class="card" onclick="openModal('Biskwit fondan', 'Biscuits fondants, parfaits pour accompagner votre café ou thé.', 'biscuit.jpg')">
+        <img src="biscuit.jpg" alt="Biskwit fondan">
+        <p>Biskwit fondan</p>
+      </div>
+      <div class="card" onclick="openModal('Graten makawoni', 'Gratin de macaroni riche en fromage et fait avec amour.', 'macaroni.jpg')">
+        <img src="macaroni.jpg" alt="Graten makawoni">
+        <p>Graten makawoni</p>
+      </div>
+            <div class="card" onclick="openModal('Croissant', 'Croissant fre ak bè, byen kroustiyan pou maten an.', 'croissant.jpg')">
+        <img src="croissant.jpg" alt="Croissant">
+        <p>Croissant</p>
+      </div>
+      <div class="card" onclick="openModal('Poulet Whisky', 'Poul asazonnen ak yon sòs wiski espesyal, yon plezi nan bouch.', 'poulet_whisky.jpg')">
+        <img src="poulet_whisky.jpg" alt="Poulet Whisky">
+        <p>Poulet Whisky</p>
+      </div>
+      <div class="card" onclick="openModal('Pizza', 'Piza kay ak bon fwomaj fonn ak engredyan fre.', 'pizza.jpg')">
+        <img src="pizza.jpg" alt="Pizza">
+        <p>Pizza</p>
+      </div>
+      <div class="card" onclick="openModal('Kibby', 'Kibi byen fri, kroustiyan deyò ak bon vyann anndan.', 'kibby.jpg')">
+        <img src="kibby.jpg" alt="Kibby">
+        <p>Kibby</p>
+      </div>
+      <div class="card" onclick="openModal('Gratiné', 'Plat graten byen dore nan fou ak anpil fwomaj.', 'gratine.jpg')">
+        <img src="gratine.jpg" alt="Gratiné">
+        <p>Gratiné</p>
+      </div>
+            <div class="card" onclick="openModal('Croissant', 'Croissant fre ak bè, byen kroustiyan pou maten an.', 'croissant.jpg')">
+        <img src="croissant.jpg" alt="Croissant">
+        <p>Croissant</p>
+      </div>
+      <div class="card" onclick="openModal('Poulet Whisky', 'Poul asazonnen ak yon sòs wiski espesyal, yon plezi nan bouch.', 'poulet_whisky.jpg')">
+        <img src="poulet_whisky.jpg" alt="Poulet Whisky">
+        <p>Poulet Whisky</p>
+      </div>
+      <div class="card" onclick="openModal('Pizza', 'Piza kay ak bon fwomaj fonn ak engredyan fre.', 'pizza.jpg')">
+        <img src="pizza.jpg" alt="Pizza">
+        <p>Pizza</p>
+      </div>
+      <div class="card" onclick="openModal('Kibby', 'Kibi byen fri, kroustiyan deyò ak bon vyann anndan.', 'kibby.jpg')">
+        <img src="kibby.jpg" alt="Kibby">
+        <p>Kibby</p>
+      </div>
+      <div class="card" onclick="openModal('Gratiné', 'Plat graten byen dore nan fou ak anpil fwomaj.', 'gratine.jpg')">
+        <img src="gratine.jpg" alt="Gratiné">
+        <p>Gratiné</p>
+      </div>
+            <div class="card" onclick="openModal('Salade Arc-en-ciel', 'Une salade fraîche et colorée composée de légumes de saison variés.', 'Salade_Arc-en-ciel.jpg')">
+        <img src="Salade_Arc-en-ciel.jpg" alt="Salade Arc-en-ciel">
+        <p>Salade Arc-en-ciel</p>
+      </div>
 
-    <img id="modalImg" style="width:100%;border-radius:15px">
-    <h3 id="modalTitle"></h3>
-    <p id="modalText"></p>
+      <div class="card" onclick="openModal('Poulet Marengo', 'Un classique savoureux préparé avec une sauce tomate, des champignons et des herbes.', 'poulet_mareng.jpg')">
+        <img src="poulet_marengo.jpg" alt="Poulet Marengo">
+        <p>Poulet Marengo</p>
+      </div>
 
-    <a id="modalBtn" target="_blank" style="
-    display:inline-block;
-    margin-top:15px;
-    background:#25D366;
-    color:white;
-    padding:12px 20px;
-    border-radius:30px;
-    text-decoration:none;
-    font-weight:bold;">
-    Commander sur WhatsApp
-    </a>
+      <div class="card" onclick="openModal('Pate', 'Pâtés feuilletés bien garnis, chauds et croustillants.', 'pate.jpg')">
+        <img src="pate.jpg" alt="Pate">
+        <p>Pate</p>
+      </div>
+      <div class="card" onclick="openModal('Vinèg', 'Vinaigre préparé pour assaisonner vos plats avec perfection.', 'vineg.jpg')">
+        <img src="vineg.jpg" alt="Vineg">
+        <p>Vinèg</p>
+      </div>
+      <div class="card" onclick="openModal('Ti koubèl bonbon', 'Petite corbeille de bonbons pour les petites douceurs.', 'corbeille.jpg')">
+        <img src="corbeille.jpg" alt="Ti koubèl bonbon">
+        <p>Ti koubèl bonbon</p>
+      </div>
+      <div class="card" onclick="openModal('Pen patat', 'Pain patate traditionnel, doux et parfumé aux épices.', 'pen_patat.jpg')">
+        <img src="pen_patat.jpg" alt="Pen patat">
+        <p>Pen patat</p>
+      </div>
+      <div class="card" onclick="openModal('Ti moso sale & dous', 'Petites pièces salées et sucrées (amuses-bouches) pour vos fêtes.', 'sale_dous.jpg')">
+        <img src="sale_dous.jpg" alt="Ti moso sale & dous">
+        <p>Ti moso sale & dous</p>
+      </div>
+      <div class="card" onclick="openModal('Kornè', 'Cornets croustillants avec garnitures au choix.', 'korne.jpg')">
+        <img src="korne.jpg" alt="Kornè">
+        <p>Kornè</p>
+      </div>
+      <div class="card" onclick="openModal('Resèt friti ak lwil', 'Fritures traditionnelles préparées à l\'huile, bien croustillantes.', 'friti_lwil.jpg')">
+        <img src="friti_lwil.jpg" alt="Resèt friti ak lwil">
+        <p>Resèt friti ak lwil</p>
+      </div>
+      <div class="card" onclick="openModal('Resèt friti ak dlo', 'Recette spéciale de friture préparée à l\'eau pour une texture unique.', 'friti_dlo.jpg')">
+        <img src="friti_dlo.jpg" alt="Resèt friti ak dlo">
+        <p>Resèt friti ak dlo</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="produits-chimiques" style="background-color: #f4f7f6;">
+    <h2>🧴 Pwodwi Chimik & Kosmetik</h2>
+    <p class="section-desc">Pran swen kò w epi kenbe kay ou pwòp avèk pwodwi nou yo.</p>
+    
+    <div class="cards">
+      <div class="card" onclick="openModal('Pomad cheve', 'Pommade nourrissante pour la croissance et la brillance de vos cheveux.', 'pomad.jpg')">
+        <img src="pomad.jpg" alt="Pomad cheve">
+        <p>Pomad cheve</p>
+      </div>
+      <div class="card" onclick="openModal('Pafòm', 'Parfum de longue durée avec des senteurs agréables.', 'parfum.jpg')">
+        <img src="parfum.jpg" alt="Pafòm">
+        <p>Pafòm</p>
+      </div>
+      <div class="card" onclick="openModal('Lwil', 'Huile corporelle et capillaire pour une hydratation maximale.', 'lwil.jpg')">
+        <img src="lwil.jpg" alt="Lwil">
+        <p>Lwil</p>
+      </div>
+      <div class="card" onclick="openModal('Pafòm Swavitél', 'Parfum adoucissant type Suavitel pour des vêtements qui sentent bon.', 'suavitel.jpg')">
+        <img src="suavitel.jpg" alt="Pafòm swavitél">
+        <p>Pafòm swavitél</p>
+      </div>
+      <div class="card" onclick="openModal('Javèl', 'Eau de javel concentrée pour un nettoyage et une désinfection parfaits.', 'javel.jpg')">
+        <img src="javel.jpg" alt="Javèl">
+        <p>Javèl</p>
+      </div>
+      <div class="card" onclick="openModal('Klowòs', 'Chlore de haute qualité pour l\'entretien de vos espaces.', 'klowos.jpg')">
+        <img src="klowos.jpg" alt="Klowòs">
+        <p>Klowòs</p>
+      </div>
+      <div class="card" onclick="openModal('Chanpou', 'Shampooing doux qui nettoie en profondeur sans abîmer les cheveux.', 'chanpou.jpg')">
+        <img src="chanpou.jpg" alt="Chanpou">
+        <p>Chanpou</p>
+      </div>
+      <div class="card" onclick="openModal('Mistoline', 'Désinfectant Mistoline pour nettoyer et parfumer votre maison.', 'mistoline.jpg')">
+        <img src="mistoline.jpg" alt="Mistoline">
+        <p>Mistoline</p>
+      </div>
+      <div class="card" onclick="openModal('Krèm po', 'Crème hydratante et adoucissante pour une peau éclatante.', 'krem_po.jpg')">
+        <img src="krem_po.jpg" alt="Krèm po">
+        <p>Krèm po</p>
+      </div>
+      
+    </div>
+  </section>
+
+  <section id="temoignages" class="temoignages-section">
+    <h2>Ce que disent nos clients</h2>
+    <div class="temoignages-container">
+      <div class="temoignage-box">
+        <p>"Gâteau délicieux, service rapide, je recommande à 100%!"</p>
+        <h4>– Marie L.</h4>
+      </div>
+      <div class="temoignage-box">
+        <p>"Livraison rapide et produits très bien emballés, très satisfaisant."</p>
+        <h4>– Jean P.</h4>
+      </div>
+      <div class="temoignage-box">
+        <p>"Les biscuits et le gratin étaient parfaits pour ma fête. Merci!"</p>
+        <h4>– Sophie M.</h4>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>📞 Kontakte Nou</h2>
+    <p>Rele nou oswa ekri nou sou WhatsApp pou pase kòmand ou.</p>
+    <p class="phones"><strong>4194-2779</strong> | <strong>3148-3713</strong></p>
+    <p>Mande nou nenpòt lòt pwodwi, n ap ede w jwenn li!</p>
+  </section>
+
+  <a class="whatsapp-float" href="https://wa.me/50941942779" target="_blank">
+    💬 Kòmande sou WhatsApp
+  </a>
+
+  <footer>
+    © 2026 Pwodwi & Sèvis Disponib — Kalite ak Konfyans
+  </footer>
+
+  <div id="modal" class="modal-overlay">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal()">✖</span>
+      <img id="modalImg" src="" alt="Produit">
+      <h3 id="modalTitle">Titre</h3>
+      <p id="modalText">Description</p>
+      <a id="modalBtn" target="_blank" class="btn-commander">
+        Commander sur WhatsApp
+      </a>
+    </div>
   </div>
-</div>
 
-<script>
-function openModal(title, text, img){
-  document.getElementById("modal").style.display="flex";
-  document.getElementById("modalTitle").innerText=title;
-  document.getElementById("modalText").innerText=text;
-  document.getElementById("modalImg").src=img;
-  document.getElementById("modalBtn").href="https://wa.me/50941942779?text=Bonjour, je veux commander: "+title;
-}
-function closeModal(){
-  document.getElementById("modal").style.display="none";
-}
-</script>
-  
+  <script>
+    function openModal(title, text, img){
+      document.getElementById("modal").style.display = "flex";
+      document.getElementById("modalTitle").innerText = title;
+      document.getElementById("modalText").innerText = text;
+      // On utilise une image par défaut si l'image n'est pas trouvée pour éviter une case vide
+      document.getElementById("modalImg").src = img;
+      document.getElementById("modalImg").onerror = function() {
+        this.src = 'https://via.placeholder.com/300x200?text=Imaj+Pwodwi';
+      };
+      // Formatage du message WhatsApp
+      var message = encodeURIComponent("Bonjour, je suis intéressé(e) par ce produit : " + title);
+      document.getElementById("modalBtn").href = "https://wa.me/50941942779?text=" + message;
+    }
+
+    function closeModal(){
+      document.getElementById("modal").style.display = "none";
+    }
+
+    // Fermer le modal si on clique en dehors de la boîte
+    window.onclick = function(event) {
+      var modal = document.getElementById("modal");
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
 </body>
 </html>
